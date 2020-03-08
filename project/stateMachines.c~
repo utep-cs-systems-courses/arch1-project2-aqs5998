@@ -2,10 +2,6 @@
 #include "stateMachines.h"
 #include "led.h"
 char state = 0;
-static enum {off=0, dim = 1, bright = 2} ledMode;
-void sm_slow_clock() {
-  ledMode = (ledMode + 1)%3;
-}
 
 char toggle_red()		/* always toggle! */
 {
@@ -67,5 +63,11 @@ void state_advance()		/* alternate between toggling red & green */
   }
 }
 
-
-
+void play_song() {
+  int[] notes = {900, 0, 810, 740, 0, 810, 830, 845, 840, 845, 0, 0, 910, 890, 870, 850, 830, 0, 790, 0, 800, 780, 0, 790, 770, 0, 0, NULL};
+  for(int i = 0; notes[i]!=NULL;i++){
+    buzzer_set_period(notes[i]);
+    break;
+  }
+  
+}

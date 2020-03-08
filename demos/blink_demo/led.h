@@ -10,5 +10,5 @@ extern unsigned char led_changed;
 
 void led_init();
 void led_update();
-
+char toggle_both();
 #endif // included
