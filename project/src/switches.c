@@ -39,6 +39,9 @@ switch_interrupt_handler()
   if(button2_state_down==1){
     songState = 1;
   }
+  if(button3_state_down == 1){
+    
+  }
 
   /*
   if(button3_state_down = 1){
