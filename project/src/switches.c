@@ -35,7 +35,7 @@ switch_interrupt_handler()
   button2_state_down = (p1val & SW2) ? 0 : 1;
 
   if(button2_state_down==1){
-    songStatus = 1;
+    songState = 1;
   }
 
   switch_state_changed = 1;
