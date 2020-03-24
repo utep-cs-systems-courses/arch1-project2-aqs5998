@@ -35,12 +35,12 @@ switch_interrupt_handler()
   button2_state_down = (p1val & SW2) ? 0 : 1;
   button3_state_down = (p1val & SW3) ? 0 : 1;
   button4_state_down = (p1val & SW4) ? 0 : 1;
-
+  
   if(button2_state_down==1){
     songState = 1;
   }
   if(button3_state_down == 1){
-    
+    led_update();
   }
 
   /*
