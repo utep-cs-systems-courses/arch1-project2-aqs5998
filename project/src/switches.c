@@ -37,6 +37,7 @@ switch_interrupt_handler()
   button4_state_down = (p1val & SW4) ? 0 : 1;
   
   if(button2_state_down==1){
+    button3_state_down = 0;
     songState = 1;
   }
   if(button3_state_down == 1){
