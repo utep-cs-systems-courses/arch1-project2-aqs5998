@@ -15,7 +15,7 @@ void led_init()
 
 void led_update(){
   char ledFlags = 0;
-   if (switch_state_down) {// Use this if statement if you want to use another button to hold
+   if (button4_state_down) {// Use this if statement if you want to use another button to hold
   state_change(); // Using this requires holding button 2 to make another work
   switch(state){
   case 0:
