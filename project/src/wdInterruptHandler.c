@@ -12,6 +12,7 @@ __interrupt_vec(WDT_VECTOR) WDT(){
     //playSong();
     if(button2_state_down == 1){//Play music and blink with first button.
       playSong();
+      blink_count=0;
     }
     blink_count = 0;
   }
