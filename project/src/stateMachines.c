@@ -7,7 +7,7 @@
 #include <stdlib.h>
 
 char state = 0;
-extern char stateSong = 0;
+char stateSong = 0;
 char songState = 0;
 //Plays Darude Sandstorm
 void playSong(){
