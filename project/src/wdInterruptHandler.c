@@ -6,7 +6,7 @@
 void
 __interrupt_vec(WDT_VECTOR) WDT(){
   static char blink_count = 0;
-  if (songStatus == 1) {
+  if (songState == 1) {
     if (++blink_count == 2) {
       playSong();
       blink_count = 0;
