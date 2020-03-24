@@ -40,7 +40,7 @@ switch_interrupt_handler()
     songState = 1;
   }
 
-  if(button4_state_down = 1){
+  if(button3_state_down = 1){
     button2_state_down = 0;
     songState = 0; //Turns off the song
   }
