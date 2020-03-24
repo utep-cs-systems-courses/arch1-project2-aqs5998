@@ -12,6 +12,9 @@ __interrupt_vec(WDT_VECTOR) WDT(){
       blink_count = 0;
     }
   }
+  if(button4_state_down == 1){
+    break;
+  }
   
   
   /*
