@@ -37,7 +37,7 @@ switch_interrupt_handler()
   if(button2_state_down==1){
     songStatus = 1;
   }
-    songStatus =1;
+
   switch_state_changed = 1;
   led_update();
 }
