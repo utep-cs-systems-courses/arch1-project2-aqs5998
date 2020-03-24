@@ -42,6 +42,9 @@ switch_interrupt_handler()
   if(button3_state_down == 1){
     led_update();
   }
+  if(button4_state_down){
+    songState == 0;
+  }
 
   /*
   if(button3_state_down = 1){
