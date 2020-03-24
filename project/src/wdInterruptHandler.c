@@ -6,7 +6,7 @@
 void
 __interrupt_vec(WDT_VECTOR) WDT(){
   static char blink_count = 0;
-  playSong();
+  //playSong();
   if (++blink_count == 40) {
     // state_advance();
     // buzzer_set_period(1000);
