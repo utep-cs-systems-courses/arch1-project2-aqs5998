@@ -3,7 +3,7 @@
 #include "led.h"
 #include "stateMachines.h"
 
-char button2_state_down, switch_state_down, switch_state_changed; /* effectively boolean */
+char button2_state_down, button4_state_down, switch_state_down, switch_state_changed; /* effectively boolean */
 
 
 static char 
@@ -33,9 +33,15 @@ switch_interrupt_handler()
   char p1val = switch_update_interrupt_sense();
   switch_state_down = (p1val & SW1) ? 0 : 1; /* 0 when SW1 is up */
   button2_state_down = (p1val & SW2) ? 0 : 1;
+  button3_state_down = (p1val & SW3) ? 0 : 1;
+  button4_state_down = (p1val & SW4) ? 0 : 1;
 
   if(button2_state_down==1){
     songState = 1;
+  }
+
+  if(button4_state_down = 1){
+    songState = 0; //Turns off the song
   }
 
   switch_state_changed = 1;
