@@ -2,6 +2,7 @@
 #include <msp430g2553.h>
 #include "libTimer.h"
 //#include "led.h"
+#include "buzzer.h"
 #include "switches.h"
 
 int main() {
