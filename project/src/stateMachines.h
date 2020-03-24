@@ -1,6 +1,8 @@
 #ifndef stateMachine_included
 #define stateMachine_included
 
+extern char songState;
+
 void playSongSwitch();
 void playSong();
 
