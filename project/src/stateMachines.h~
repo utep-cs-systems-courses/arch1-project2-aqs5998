@@ -1,11 +1,9 @@
 #ifndef stateMachine_included
 #define stateMachine_included
 
-void playSongSwitch();
-void playSong();
 void toggle_red();
-char toggle_green();
-char toggle_both();
+void toggle_green();
 void state_advance();
+void playSong();
 
 #endif
