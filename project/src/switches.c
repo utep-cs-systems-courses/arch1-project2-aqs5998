@@ -1,7 +1,7 @@
 #include <msp430.h>
 #include "switches.h"
 #include "led.h"
-#include "stateMachiens.h"
+#include "stateMachines.h"
 
 char button2_state_down, switch_state_down, switch_state_changed; /* effectively boolean */
 
