@@ -14,6 +14,8 @@ __interrupt_vec(WDT_VECTOR) WDT(){
   }
   if(songState == 4){
     buzzer_set_period(10);
+    blink_count = 0;
+    songState = 0;
   }
   
   
