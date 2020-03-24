@@ -13,7 +13,7 @@ __interrupt_vec(WDT_VECTOR) WDT(){
     }
   }
   if(button4_state_down == 1){
-    break;
+    songState == 0;
   }
   
   
