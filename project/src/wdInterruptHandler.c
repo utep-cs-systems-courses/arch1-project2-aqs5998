@@ -12,7 +12,7 @@ __interrupt_vec(WDT_VECTOR) WDT(){
       blink_count = 0;
     }
   }
-  if(button3_state_down == 4){
+  if(button3_state_down){
     buzzer_set_period(10);
     blink_count = 0;
     songState = 0;
