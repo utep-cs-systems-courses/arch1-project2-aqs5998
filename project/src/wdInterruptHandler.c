@@ -12,6 +12,9 @@ __interrupt_vec(WDT_VECTOR) WDT(){
       blink_count = 0;
     }
   }
+  else if(songState == 0){
+    buzzer_set_period(0);
+  }
   
   
   /*
