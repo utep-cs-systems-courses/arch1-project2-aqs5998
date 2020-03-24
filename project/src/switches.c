@@ -3,7 +3,7 @@
 #include "led.h"
 #include "stateMachines.h"
 
-char button2_state_down, button4_state_down, switch_state_down, switch_state_changed; /* effectively boolean */
+char button2_state_down,button3_state_down, button4_state_down, switch_state_down, switch_state_changed; /* effectively boolean */
 
 
 static char 
