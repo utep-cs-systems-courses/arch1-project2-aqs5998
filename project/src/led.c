@@ -86,15 +86,11 @@ void ledOff()
   char ledFlags = 0;
   if (button4_state_down)
   {                 // Use this if statement if you want to use another button to hold
-    state_change(); // Using this requires holding button 2 to make another work
-    switch (state)
-    {
-
       P1OUT &= (0xff - LEDS) | ledFlags; // clear bits for off leds
       P1SEL &= (0xff - LEDS) | ledFlags;
       P1SEL |= ledFlags;
       P1OUT |= ledFlags; // set bits for on leds
-    }
+    
   }
 }
 
