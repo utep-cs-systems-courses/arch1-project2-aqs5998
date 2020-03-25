@@ -15,7 +15,7 @@ buzzer.elf: ${COMMON_OBJECTS} p1_interrupt_handler.o led.o switches.o buzzer.o b
 
 load: buzzer.elf
 	msp430loader.sh buzzer.elf
-
+#should remove all o and elf files
 clean:
 	rm -f *.o *.elf
 

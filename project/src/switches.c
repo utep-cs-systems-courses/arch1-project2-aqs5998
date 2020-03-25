@@ -3,6 +3,9 @@
 #include "led.h"
 #include "stateMachines.h"
 
+
+/* Configures the buttons instructions are in the readme file */
+
 char button2_state_down,button3_state_down, button4_state_down, switch_state_down, switch_state_changed; /* effectively boolean */
 
 
@@ -44,8 +47,9 @@ switch_interrupt_handler()
     songState = 3;
     led_update();
   }
-  if(button4_state_down){
-    songState == 3;
+  if(button4_state_down  == 1){
+    songState = 0;
+    ledOff();
   }
 
   /*

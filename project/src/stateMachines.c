@@ -16,6 +16,7 @@ void playSong(){
   stateSong++;	 
 }
 
+//Plays another song that is not being used
 void playSongSwitch() {
   //buzzer_set_period(1000);
   //int notes[] = {1000, 0, 810, 740, 0, 810, 830, 845, 840, 845, 0, 0, 0, 790, 770, 0, 2000};

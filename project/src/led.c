@@ -19,7 +19,7 @@ void led_update(){
   state_change(); // Using this requires holding button 2 to make another work
   switch(state){
   case 0:
-    ledFlags = LED_RED;
+    ledFlags = LED_RED; // Shows red led at full power
     P1SEL |= LEDS;
     CCR0 = 499;
     CCTL1 = OUTMOD_7;
@@ -27,7 +27,7 @@ void led_update(){
     TACTL = TASSEL_2 + MC_1;
     _BIS_SR(LEDS);
     break;
-  case 1:ledFlags = LED_GREEN;
+  case 1:ledFlags = LED_GREEN; // Shows green led at a dim level
     P1SEL |= LEDS;
     CCTL1 = OUTMOD_7;
     CCR0 = 499;
@@ -64,15 +64,30 @@ void led_update(){
 void state_change(){
   if(state == 0){ //0 is red, 1 is green
     state = 1;
-    
   }
   else if(button2_state_down == '1'){
     state = 2;
   }
   else {
     state = 0;
-    
   }
+}
+
+void ledOff(){
+
+  char ledFlags = 0;
+   if (button4_state_down) {// Use this if statement if you want to use another button to hold
+  state_change(); // Using this requires holding button 2 to make another work
+  switch(state){
+
+  P1OUT &= (0xff - LEDS) | ledFlags; // clear bits for off leds
+  P1SEL &= (0xff - LEDS) | ledFlags;
+  P1SEL |= ledFlags;
+  P1OUT |= ledFlags;// set bits for on leds
+  
+   }
+
+
 }
 
 void button_press(char c){
@@ -82,6 +97,4 @@ void button_press(char c){
     //PIOUT &= (0xff - LEDS) | ledFlags;
     // P1OUT |= ledFlags;
   }
-  
-  
 }
