@@ -1,20 +1,24 @@
 #include <msp430.h>
 #include "stateMachines.h"
-#include "buzzer.h" 
-#include "switches.h" 
+#include "buzzer.h"
+#include "switches.h"
 
 /* Enters a state depending on the songState char variable */
 
 void
-__interrupt_vec(WDT_VECTOR) WDT(){
+    __interrupt_vec(WDT_VECTOR) WDT()
+{
   static char blink_count = 0;
-  if (songState == 1) {
-    if (++blink_count == 2) {
+  if (songState == 1)
+  {
+    if (++blink_count == 2)
+    {
       playSong();
       blink_count = 0;
     }
   }
-  if(songState == 3){
+  if (songState == 3)
+  {
     buzzer_set_period(1000);
     blink_count = 0;
     songState = 0;
