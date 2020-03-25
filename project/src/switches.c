@@ -49,6 +49,7 @@ void switch_interrupt_handler()
   {
     songState = 0;
     ledOff();
+    buzzer_init();  
   }
 
   /*
