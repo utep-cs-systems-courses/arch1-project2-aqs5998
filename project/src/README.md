@@ -30,7 +30,11 @@ Press this button to play Sandstorm. Sandstorm is an instrumental spong by Finni
 
 # Button 3 (0 0 1 0 )
 
-Getting tired of the song? Press this button to stop the music
+Getting tired of the song? Press button 3 to turn off the song to a deep buzz sound
+
+# Button 4 (0 0 0 1)
+
+Getting tired of the song? Tired of the lights???? Press button 4 to stop the music, and lights
 
 ## Getting Started 
 
