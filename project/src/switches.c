@@ -5,7 +5,7 @@
 #include "assemblySongSwitch.h"
 
 /* Configures the buttons instructions are in the readme file */
-
+int state = 0;
 char button2_state_down, button3_state_down, button4_state_down, switch_state_down, switch_state_changed; /* effectively boolean */
 
 static char
@@ -48,6 +48,7 @@ void switch_interrupt_handler()
   }
   if (button4_state_down == 1)
   {
+    state = 0;
     state_adv();
     //songState = 0;
     //ledOff();
