@@ -34,7 +34,7 @@ Getting tired of the song? Press button 3 to turn off the song to a deep buzz so
 
 # Button 4 (0 0 0 X)
 
-Would you like to play the first 5 notes of Beethoven? Then press the 4th button play the toy like a toy piano! Play an older song with an older programming language assembly
+Would you like to play the first few notes of Beethoven? Then press the 4th button play the toy like a toy piano! Play an older song with an older programming language assembly
 
 ## Switches.c .h 
 Sets up the MSP430 to respond to button presses to be able to active the leds. This file enables the resistors, the interrupts from the switches, and pull ups for the swtiches to allow the MSP430 to interact with the user.
