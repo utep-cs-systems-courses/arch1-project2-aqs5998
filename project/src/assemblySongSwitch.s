@@ -120,5 +120,4 @@ default:
        
         mov #0, &state;
 end: 
-        call #led_init
         ret
