@@ -20,21 +20,21 @@ This toy should at minimum:
 * implement a state machine to maintain the state of the toy,
 * and use the four buttons on the expansion board (P2.0-3) to transition the state machine.
 
-# Button 1 (1 0 0 0)
+# Button 1 (X 0 0 0)
 
 Press this button to toggle between a bright red light, or a dim green light. If you leave the dim light on and play the song then the light will flicker with the music. If you leave the red light on then the light will just stay on
 
-# Button 2 (0 1 0 0 )
+# Button 2 (0 X 0 0 )
 
 Press this button to play Sandstorm. Sandstorm is an instrumental spong by Finnish DJ and record producer Darude. The song was released in 1999. Pressing the button again will play the song starting over. 
 
-# Button 3 (0 0 1 0 )
+# Button 3 (0 0 X 0 )
 
 Getting tired of the song? Press button 3 to turn off the song to a deep buzz sound
 
-# Button 4 (0 0 0 1)
+# Button 4 (0 0 0 X)
 
-Getting tired of the song? Tired of the lights???? Press button 4 to stop the music, and lights
+Would you like to play the first 5 notes of Beetoven? Then press the 4th button to increment each note! Play an older song with an older programming language assembly
 
 ## Getting Started 
 

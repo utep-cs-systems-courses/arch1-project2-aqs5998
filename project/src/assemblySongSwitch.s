@@ -115,5 +115,6 @@ default:
         call #buzzer_set_period;
         call #buzzer_init
 
-end: 
+end:    call #buzzer_init
+        call #led_init
         ret
