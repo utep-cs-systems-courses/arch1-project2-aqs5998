@@ -87,17 +87,17 @@ case11:
 case12:
         mov #12, &state;
         mov #523, r12
-        call #buzzer_set_period(523); //c
+        call #buzzer_set_period; //c
         jmp end;
 case13:
         mov #13, &state;
         mov #600, r12
-        call #buzzer_set_period(600); //B
+        call #buzzer_set_period; //B
         jmp end;
 case14:
         mov #14, &state;
         mov #600, r12
-        call #buzzer_set_period(600);
+        call #buzzer_set_period;
         jmp end;
 case15:
         mov #15, &state;
