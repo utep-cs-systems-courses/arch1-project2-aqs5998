@@ -2,7 +2,7 @@
 #include "switches.h"
 #include "led.h"
 #include "stateMachines.h"
-#include "assemblySongSwitch.h"
+//#include "assemblySongSwitch.h"
 
 /* Configures the buttons instructions are in the readme file */
 
