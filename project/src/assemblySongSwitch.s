@@ -21,7 +21,8 @@ case01:
         call #buzzer_set_period
         jmp end;
 default:
-        call #buzzer_init;
+        mov #523, r12
+        call #buzzer_set_period
 
 end: 
         ret
