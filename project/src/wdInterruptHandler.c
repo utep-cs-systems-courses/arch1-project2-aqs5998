@@ -2,6 +2,7 @@
 #include "stateMachines.h"
 #include "buzzer.h"
 #include "switches.h"
+#include "assemblySongSwitch.h"
 
 /* Enters a state depending on the songState char variable */
 
@@ -23,6 +24,7 @@ void
     blink_count = 0;
     songState = 0;
   }
+  
 
   //This section is not being used
   /*

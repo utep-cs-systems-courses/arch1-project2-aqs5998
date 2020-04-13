@@ -88,6 +88,7 @@ void playSongSwitch()
   case 14:
     state = 15;
     buzzer_set_period(0);
+    buzzer_init();
     break;
   }
 }

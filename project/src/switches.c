@@ -2,6 +2,7 @@
 #include "switches.h"
 #include "led.h"
 #include "stateMachines.h"
+#include "assemblySongSwitch.h"
 
 /* Configures the buttons instructions are in the readme file */
 
@@ -47,9 +48,11 @@ void switch_interrupt_handler()
   }
   if (button4_state_down == 1)
   {
-    songState = 0;
-    ledOff();
-    buzzer_init();  
+    state_adv();
+    //songState = 0;
+    //ledOff();
+    //playSongSwitch();
+    //buzzer_init();  
   }
 
   /*
