@@ -1,7 +1,7 @@
 #ifndef assemblySongSwitch_included
 #define assemblySongSwitch_included
 
-extern int stateAssemlby = 0; // external state variable
+extern int stateAssemlby; // external state variable
 
 void state_adv(void);
 
