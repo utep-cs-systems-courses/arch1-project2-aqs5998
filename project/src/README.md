@@ -22,7 +22,7 @@ This toy should at minimum:
 
 # Button 1 (X 0 0 0)
 
-Press this button to toggle between a bright red light, or a dim green light. If you leave the dim light on and play the song then the light will flicker with the music. If you leave the red light on then the light will just stay on
+Press this button to toggle between a bright red light, or a dim green light. If you leave the dim light on and play the song then the light will flicker with the music. If you leave the solid red light on then the light will just stay on
 
 # Button 2 (0 X 0 0 )
 
@@ -34,7 +34,35 @@ Getting tired of the song? Press button 3 to turn off the song to a deep buzz so
 
 # Button 4 (0 0 0 X)
 
-Would you like to play the first 5 notes of Beetoven? Then press the 4th button to increment each note! Play an older song with an older programming language assembly
+Would you like to play the first 5 notes of Beethoven? Then press the 4th button play the toy like a toy piano! Play an older song with an older programming language assembly
+
+## Switches.c .h 
+Sets up the MSP430 to respond to button presses to be able to active the leds. This file enables the resistors, the interrupts from the switches, and pull ups for the swtiches to allow the MSP430 to interact with the user.
+
+## LED.c .h 
+Has several methods such as led_init led_update, state_change, and ledOFF(). 
+
+Led_init 
+Initializes the leds to P1DIR to attatch the bits to the led output. 
+
+Led_update changes the leds from red to green. The green led is dimmied by changing the clock cycle speed.
+
+Led_OFF
+Simply turns the leds off by clearing P1OUT
+
+## stateMachines.c .h 
+
+PlaySong()
+Sets notes in an in array. Traverses the array through the cycles in the wdInteruptHanlder.c Also includes the playSongSwitch assemlby song in the C programming language in comments.
+
+## buzzer.c .h 
+Simply has buzzer_init that sets the bits to allow the buzzer to play.
+
+## assemblySongSwitch.h .s
+Has the beethoven song that uses assemlby
+
+## wdInterruptHanlder.c .h
+Plays the song using the cycles also interacts with the statemachine to play Darude SandStorm
 
 ## Getting Started 
 
