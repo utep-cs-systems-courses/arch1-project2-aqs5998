@@ -93,7 +93,7 @@ case15:
         call #buzzer_init;
         jmp end;
 default:
-        mov #600, r12
+        mov #1000, r12
         call #buzzer_set_period;
 
 end: 
