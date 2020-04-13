@@ -48,7 +48,7 @@ void switch_interrupt_handler()
   }
   if (button4_state_down == 1)
   {
-    //state_adv();
+    state_adv();
     //songState = 0;
     //ledOff();
     //playSongSwitch();
