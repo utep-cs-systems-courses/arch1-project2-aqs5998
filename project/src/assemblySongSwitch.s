@@ -4,7 +4,6 @@
         ;.global?
         .text
 jt:     
-        .word default
         .word case01
         .word case02
         .word case03
@@ -17,6 +16,7 @@ jt:
         .word case10
         .word case11
         .word case12
+        .word default
         .text
         .global state_adv
 state_adv:
