@@ -112,8 +112,8 @@ case15:
         jmp end;
 default:
         mov #200, r12
-        call# buzzer_set_period;
-        call# buzzer_init
+        call #buzzer_set_period;
+        call #buzzer_init
 
 end: 
         ret
