@@ -23,10 +23,10 @@ jt:
         .text
         .global state_adv
 state_adv:
-        cmp#16, &state
+        cmp #16, &state
         jc default
 
-        move &state, r12
+        mov &state, r12
         add r12, r12 ; we are doing this to double the amount of "cells"
         mov jt(r12), r0 ;moving the data to the first position ro
 case01:
