@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char state = 0;
+//char state = 0;
 char songState = 0;
 char stateSong = 0;
 //Plays Darude Sandstorm
@@ -18,6 +18,7 @@ void playSong()
 }
 
 //Plays another song that is not being used
+/*
 void playSongSwitch()
 {
   //buzzer_set_period(1000);
@@ -92,3 +93,4 @@ void playSongSwitch()
     break;
   }
 }
+*/
