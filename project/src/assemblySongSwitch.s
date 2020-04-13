@@ -31,7 +31,7 @@ state_adv:
         mov jt(r12), r0 ;moving the data to the first position ro
 case01:
         mov #1, &state
-        call #buzzer_set_period(523) 
+        call #buzzer_set_period(#523) 
         jmp end;
 case02:
         mov #2, &state;
