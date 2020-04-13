@@ -106,7 +106,7 @@ case15:
         call #buzzer_init;
         jmp end;
 default:
-        call #buzzer_init();
+        call #buzzer_init;
 
 end: 
         ret
