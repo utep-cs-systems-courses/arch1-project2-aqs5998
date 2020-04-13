@@ -5,17 +5,18 @@
 #include "assemblySongSwitch.h"
 
 /* Enters a state depending on the songState char variable */
+static char blink_count = 0;
 
 void
     __interrupt_vec(WDT_VECTOR) WDT()
 {
-  static char blink_count = 0;
+  
   if (songState == 1)
   {
     if (++blink_count == 2)
     {
-      //playSong();
-      state_adv();
+      blink_count=0;
+      playSong();
       blink_count = 0;
     }
   }
@@ -24,6 +25,10 @@ void
     buzzer_set_period(1000);
     blink_count = 0;
     songState = 0;
+  }
+  if (songState == 4) {
+    blink_count = 5;
+    state_adv();
   }
   
 
