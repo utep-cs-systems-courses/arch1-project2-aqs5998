@@ -19,7 +19,6 @@ jt:
         .word case13
         .word case14
         .word case15
-        .word case16
         .word default
         .text
         .global state_adv
