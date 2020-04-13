@@ -20,7 +20,7 @@ case01:
         mov #1, &state
         mov #523, r12
         call #buzzer_set_period
-        jmp end;
+        ;jmp end;
 
 case02:
         mov #2, &state;
@@ -62,7 +62,7 @@ case08:
         mov #600, r12
         call #buzzer_set_period ; //B
         jmp end;
-        
+
 case09:
         mov #9, &state;
         mov #650, r12
