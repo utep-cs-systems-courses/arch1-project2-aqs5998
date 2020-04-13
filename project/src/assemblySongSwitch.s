@@ -6,6 +6,17 @@
 jt:     
         .word default
         .word case01
+        .word case02
+        .word case03
+        .word case04
+        .word case05
+        .word case06
+        .word case07
+        .word case08
+        .word case09
+        .word case10
+        .word case11
+        .word case12
         .text
         .global state_adv
 state_adv:

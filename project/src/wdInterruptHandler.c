@@ -14,7 +14,8 @@ void
   {
     if (++blink_count == 2)
     {
-      playSong();
+      //playSong();
+      state_adv();
       blink_count = 0;
     }
   }
