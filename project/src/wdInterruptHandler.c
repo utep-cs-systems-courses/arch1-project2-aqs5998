@@ -2,7 +2,7 @@
 #include "stateMachines.h"
 #include "buzzer.h"
 #include "switches.h"
-#include "assemblySongSwitch.h"
+//#include "assemblySongSwitch.h"
 
 /* Enters a state depending on the songState char variable */
 
