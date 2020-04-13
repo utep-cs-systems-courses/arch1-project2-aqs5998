@@ -42,55 +42,56 @@ case03:
         call #buzzer_set_period(500); //D
         jmp end
 case04:
-        mov #, &state;
+        mov #4, &state;
         call #buzzer_set_period(450); //E
         jmp end
 case05:
-        mov #, &state;
+        mov #5, &state;
         call #buzzer_set_period(450); //E
         jmp end;
 case06:
-        mov #, &state;
+        mov #6, &state;
         call #buzzer_set_period(500); //D
         jmp end;
 case07:
-        mov #, &state;
+        mov #7, &state;
         call #buzzer_set_period(523); //C
         jmp end;
 case08:
-        mov #, &state;
+        mov #8, &state;
         call #buzzer_set_period(600); //B
         jmp end;
 case09:
-        mov #, &state;
+        mov #9, &state;
         call #buzzer_set_period(650); //A
         jmp end;
 case10:
-        mov #, &state;
+        mov #10, &state;
         jmp end;
         call #buzzer_set_period(650); //A
 case11:
-        mov #, &state;
+        mov #11, &state;
         call #buzzer_set_period(600); //B
         jmp end;
 case12:
-        mov #, &state;
+        mov #12, &state;
         call #buzzer_set_period(523); //c
         jmp end;
 case13:
-        mov #, &state;
+        mov #13, &state;
         call #buzzer_set_period(600); //B
         jmp end;
 case14:
-        mov #, &state;
+        mov #14, &state;
         call #buzzer_set_period(600);
         jmp end;
 case15:
-        mov #, &state;
+        mov #15, &state;
         call #buzzer_set_period(0);
         buzzer_init();
         jmp end;
 default:
         call #buzzer_init();
 
-    
+end: 
+        ret
