@@ -23,8 +23,8 @@ jt:
         .text
         .global state_adv
 state_adv:
-        ;cmp #16, &state
-        ;jnc default
+        cmp #16, &state
+        jnc default
 
         mov &state, r12
         add r12, r12 ; we are doing this to double the amount of "cells"
