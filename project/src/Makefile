@@ -22,7 +22,6 @@ clean:
 buzzer.c: buzzer.h
 buzzerMain.c: buzzer.h
 stateMachines.o: stateMachines.h
-assemblySongSwitch.o :assemblySongSwitch.h
 wdInterruptHandler.o: stateMachines.h
 
 
